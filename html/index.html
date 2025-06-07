@@ -95,6 +95,10 @@
         });
 
         setTimeout(() => {
+            let start = Date.now() / 1000;
+            while (document.getElementById("vdbanner") === null && Data.now() / 1000 - start < 5){
+                c++;
+            }
             document.getElementById("vdbanner").outerHTML = "";
         }, "100");
     </script>
