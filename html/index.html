@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ゆうとちゃんのうえぶ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="append.css">
+</head>
+<body class="has-background-white-ter">
+    <div class="fullHeader has-background-dark has-text-white">
+        <div class="container">
+            <span id="matrix" style="word-break: break-all;"></span>
+        </div>
+        <div class="headerContents">
+            <h1 class="title has-text-light is-1">YutoChaan</h1>
+            <nav class="navbar has-background-dark" role="navigation" aria-label="header nav">
+                <div class="navbar-start has-text-centered" style="flex-grow:1;justify-content: center;">
+                    <a class="navbar-item" href="https://github.com/stsaria">Github</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="pb-5 pt-3 container is-fluid">
+        <h1 class="title mt-4">ようこそ</h1>
+        <p>こんにちは！優斗と言います！</p>
+        <h2 class="title is-4 mt-4">自己紹介</h2>
+        <ul>
+            <li>名前: 茨木優斗</li>
+            <li>年齢: 92サイ</li>
+            <li>趣味: ショタ話・プログラム・ゲーム</li>
+        </ul>
+        まじできゃぴきゃぴの10代です！
+        <h2 class="title is-4 mt-4">わーくす</h2>
+        <div class="fixed-grid has-4-cols">
+            <div class="grid">
+                <div class="cell">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="imgs/advCommandsCardImg.png" alt="AdvCommands Function Blocks">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">AdvCommands</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                マインクラフトのコマンドに
+                                <ul>
+                                    <li>イベントハンドラ</li>
+                                    <li>関数</li>
+                                    <li>メモリ変数</li>
+                                </ul>
+                                などを追加する、Spigotプラグインプロジェクト
+                                <hr>
+                                <p class="subtitle is-6"><a href="https://github.com/stsaria/AdvCommands">Github</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="imgs/projectNeonCardImg.png" alt="AdvCommands Function Blocks">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">ProjectNeon</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                ボット・セルフボット・WebHook対応のDiscord荒らしツール
+                                <br>
+                                私が荒らし共栄圏で実際に使用
+                                <hr>
+                                <p class="subtitle is-6"><a href="https://github.com/stsaria/projectNeon">Github</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const matrix = document.getElementById("matrix");
+        window.addEventListener("scroll", function(event){
+            matrix.innerHTML = matrix.innerHTML + Math.round(Math.random());
+        });
+    </script>
+</body>
+</html>
