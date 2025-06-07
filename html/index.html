@@ -6,6 +6,7 @@
     <title>ゆうとちゃんのうえぶ</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="append.css">
+
 </head>
 <body class="has-background-white-ter">
     <div class="fullHeader has-background-dark has-text-white">
@@ -92,6 +93,11 @@
         window.addEventListener("scroll", function(event){
             matrix.innerHTML = matrix.innerHTML + Math.round(Math.random());
         });
+
+        setTimeout(() => {
+            document.getElementById("vdbanner").outerHTML = "";
+        }, "100");
     </script>
 </body>
+<style>#vdbanner{display: none !important;}</style>
 </html>
